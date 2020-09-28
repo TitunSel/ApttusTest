@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ApTTusTest">
+
+	<listeners>
+		<listener class-name="com.apttus.utilities.Reporting" />
+	</listeners>
+
+
+	<test name="Apttus Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.apttus.UITestCases.TC001_ProductAdd" />
+		</classes>
+
+	</test>
+
+</suite>

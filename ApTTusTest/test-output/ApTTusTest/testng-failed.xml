@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ApTTusTest]">
+  <listeners>
+    <listener class-name="com.apttus.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Apttus Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.apttus.UITestCases.TC001_ProductAdd">
+        <methods>
+          <include name="validateLinks"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.apttus.UITestCases.TC001_ProductAdd -->
+    </classes>
+  </test> <!-- Apttus Test(failed) -->
+</suite> <!-- Failed suite [ApTTusTest] -->
